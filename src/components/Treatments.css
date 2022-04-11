@@ -1,0 +1,105 @@
+.treatments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Cairo";
+    background-color: #FFFAFE;
+    padding: 20px 0 20px 0;
+}
+
+.treatments h1 {
+    font-size: 3em;
+    font-weight: normal;
+    border-bottom: #000 solid 2px;
+    margin-bottom: 60px;
+}
+
+.treatment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.treatment h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+}
+.ansiedade {
+    background: url(../img/ansiedade.png) no-repeat center;
+    background-size: cover;
+    width: 70%;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.depressao {
+    background: url(../img/depressão.png) no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.traumas {
+    background: url(../img/trauma.png) no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.ideacaoSuicida {
+    background: url(../img/ideacao-suicida.png) no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.ideacaoSuicida h2:nth-child(2) {
+    margin-top: -30px;
+}
+
+@media (min-width: 500px) {
+    .ansiedade, .traumas, .depressao, .ideacaoSuicida {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 900px) {
+    .treatment {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }  
+}
+
+@media (min-width: 1060px) {
+    .ansiedade, .traumas, .depressao, .ideacaoSuicida {
+        width: 40%;
+    }
+   
+}

@@ -1,0 +1,163 @@
+.form {
+    background-color: #533757;
+    color: #fff;
+    font-family: "Cairo";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0 50px 0;
+}
+
+.form h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 20px 0 20px 0;
+    border-bottom: #fff solid 2px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.form form label {
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+.form form input {
+    background: none;
+    border: none;
+    border-bottom: #fff solid 2px;
+    padding: 3px 4px;
+    font-family: "Cairo";
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form form input::placeholder {
+    color: rgba(255, 255, 255, 0.20);
+}
+
+.form form label[for="Mensagem"] {
+    margin-bottom: 7px;
+}
+
+.form form textarea {
+    background: none;
+    border: #fff solid 2px;
+    padding: 3px 4px;
+    font-family: "Cairo";
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    resize: none;
+}
+
+.form form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.20);
+}
+
+.form form input:focus, .form form textarea:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form form button {
+    width: 25%;
+    margin-top: 25px;
+    font-family: "Cairo";
+    font-size: 1em;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: #fff;
+    color: #533757;
+    transition: 0.5s;
+}
+
+.form button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.2);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFAFE;
+    padding-bottom: 35px;
+}
+
+.social img {
+    width: 70%;
+    margin-top: 35px ;
+}
+.social div {
+    align-self: flex-start;
+    margin: 25px 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social a{
+    text-decoration: none;
+    color: #000;
+    font-family: "Cairo";
+    font-size: 1.1em;
+    padding: 7px 0;
+}
+
+.socialIcons {
+    font-size: 1.3em;
+    position: relative;
+    top: 5px;
+    margin-right: 2px;
+}
+
+.social a:nth-child(1) .socialIcons {
+    font-size: 1.2em;
+    top: 3px;
+}
+
+.social a:nth-child(3){
+    font-size: 1em;
+}
+
+.social a:nth-child(3) .socialIcons {
+    font-size: 1.5em;
+    top: 4px;
+}
+
+.hideSocial {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .form form {
+        width: 400px;
+    }
+
+    .social img {
+        width: 350px;
+    }
+
+    .social div {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 700px) {
+
+   .social {
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+
+}
+
