@@ -1,11 +1,6 @@
 import React from "react"
 import "./Treatments.css"
 
-import Ansiedade from "../img/ansiedade.png"
-import Depressão from "../img/depressão.png"
-import Traumas from "../img/trauma.png"
-import IdeaçãoSuicida from "../img/ideacao-suicida.png"
-
 export default () =>
     <section id="treatments" className="treatments">
         <h1>Tratamentos</h1>
